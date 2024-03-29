@@ -13,4 +13,4 @@
 
 - classification의 그림과 같이 O와 X를 나누는 classification을 진행한다고 하자 이떄의 가로 축을 x1, 세로 축을 x2라 할 때
 
-<p align="center"><span style="font-size:100%">$\theta_1 x_1 + \theta_2 x_2 + \theta_3 = 0$</span></p>
+<p align="center"><span style="font-size:250%">$\theta_1 x_1 + \theta_2 x_2 + \theta_3 = 0$</span></p>
