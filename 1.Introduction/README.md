@@ -7,10 +7,8 @@
 
 # 2. Types of machine learning problems
 
-<img src="https://github.com/junofficial/CS189_note/assets/124868359/c2399e29-3207-4c91-8eff-b38d95781946.png  width="200" height="400"/>
+<img src="https://github.com/junofficial/CS189_note/assets/124868359/c2399e29-3207-4c91-8eff-b38d95781946  width="200" height="400"/>
 
-![image]()
-<>
 # 3. A model for classification
 
 - classification의 그림과 같이 O와 X를 나누는 classification을 진행한다고 하자 이떄의 가로 축을 x1, 세로 축을 x2라 할 때
