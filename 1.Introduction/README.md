@@ -24,7 +24,7 @@
 
 # 4. A classification example
 
-1. A linear classifier
+##1. A linear classifier
   
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/c69f6ed6-a2e2-4c81-9d23-bb8f6e9d1ad4" width="300" height="300"/></p>
    
