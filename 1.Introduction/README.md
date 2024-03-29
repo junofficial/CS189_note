@@ -27,7 +27,15 @@
 1. A linear classifier
   
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/c69f6ed6-a2e2-4c81-9d23-bb8f6e9d1ad4" width="300" height="300"/></p>
+   
+   - Linear decision boundary를 통해 분류하게 되고 잘 구분하지 못하는 단점이 있다.
 
-- Linear decision boundary를 통해 분류하게 되고 잘 구분하지 못하는 단점이 있다.
+2. Nearest neighbor classifiers
 
-2. 
+   <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
+
+   - Nearest neighbor classifier의 경우 Linear에 비해 학습 데이터를 정확하게 분류할 수 있다.
+   - 1-nearest neighbor의 경우 가장 정확하게 분류할 수 있지만 overfitting의 전형적인 예시라고 볼 수 있다.
+   - 15-nearest neighbor의 경우 약간 smoothing이 될 수 있는 것을 볼 수 있지만, 수식적으로 표현할 수 없고 non-Linear하다.
+  
+3. 
