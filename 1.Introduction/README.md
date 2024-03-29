@@ -12,7 +12,5 @@
 # 3. A model for classification
 
 - classification의 그림과 같이 O와 X를 나누는 classification을 진행한다고 하자 이떄의 가로 축을 x1, 세로 축을 x2라 할 때
-</br>
-$$
-\(\theta^*_i\)
-$$
+
+$\sqrt{3x-1}+(1+x)^2$
