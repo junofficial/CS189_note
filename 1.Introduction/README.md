@@ -7,7 +7,7 @@
 
 # 2. Types of machine learning problems
 
-<img src="https://github.com/junofficial/CS189_note/assets/124868359/c2399e29-3207-4c91-8eff-b38d95781946  width="200" height="400"/>
+<img src="https://github.com/junofficial/CS189_note/assets/124868359/c2399e29-3207-4c91-8eff-b38d95781946 width="200" height="400"/>
 
 # 3. A model for classification
 
