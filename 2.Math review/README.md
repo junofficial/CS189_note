@@ -13,7 +13,10 @@
      <p align="center">$= E[(X - E[X])^2] = E[X^2] - (E[X])^2$</p>
    - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
 
-4. Optimizaion 알고리즘이 데이터에 well fitted라면 good parameters를 찾게 된다.
+2. Random variables의 예시 => 동전던지기
+
+3. X \sim \text{Bernoulli}(p)
+
 5. The goal is for the model to generalize to new data which was not fit on.
 
 그 예제로는 밑에 같은 것들이 존재한다.
