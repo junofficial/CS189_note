@@ -50,7 +50,10 @@
    - $L_p norm$은 벡터 성분의 p제곱합의 1/p제곱으로 정의됨
      <p align="center">$\|x\|_p = \left( \sum_{i=1}^{n} |x_i|^p \right)^{1/p}$</p>
 
-4. Nearest neighbor classifiers
+3. Matrix
+   - Square matrix : $n=m$
+   - Symmetric matrix : $a_{ij} = a_{ji}, A = A^T$
+   - Positive semidefinite matrix : a square, symmetric matrix A for which $X^{T}AX \leq 0, for all X$
 
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
 
