@@ -67,7 +67,6 @@
 2. Singularvalue and singularvectors
    - 마찬가지로 링크 첨부해두겠습니다. 설명이 자세해서 공부할 때는 좋을 것 같습니다.
    - https://darkpgmr.tistory.com/106
-   <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
 
 # 4. Vector calculus review
 
