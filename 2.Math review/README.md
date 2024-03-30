@@ -31,7 +31,9 @@
      (latex수식은 제대로 적었는데 시그마가 계속 위로 올라가네요)
 
    - 추가조사 : 마르코프 부등식, 체비셰프 부등식, 젠슨 부등식
-   - 마르코프 부등식 : $\mathbb{E}[X] \geq t P(X \geq t), P(X \geq a) \leq \frac{\mathbb{E}[X]}{a}$
+      - 마르코프 부등식 : $\mathbb{E}[X] \geq t P(X \geq t), P(X \geq a) \leq \frac{\mathbb{E}[X]}{a}$
+      - 체비셰프 부등식 : $P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$
+      - 젠슨 부등식 : $\varphi\left(\mathbb{E}[X]\right) \leq \mathbb{E}[\varphi(X)]$ (단, 개구간 I에서 정의된 convex함수 일 떄)
 
 # 3. Linear algebra review
 
