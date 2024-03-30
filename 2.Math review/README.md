@@ -7,9 +7,9 @@
    - 실제 나온 sample의 경우는 소문자로 작성하는 것이 일반적
    - i.i.d.(independent and identically distributed)한 성질을 가지고 있다.
    - Expected Value
-     <p align="\[ E[X] = \sum_{x} x \cdot P(X = x) \]$</p>
+     <p align="center">$\[ E[X] = \sum_{x} x \cdot P(X = x) \]$</p>
    - Variance
-     <p align="\text{Var}(X) = \sum_{x} (x - E[X])^2 \cdot P(X = x)$</p>
+     <p align="center">$\text{Var}(X) = \sum_{x} (x - E[X])^2 \cdot P(X = x)$</p>
     
 4. Optimizaion 알고리즘이 데이터에 well fitted라면 good parameters를 찾게 된다.
 5. The goal is for the model to generalize to new data which was not fit on.
