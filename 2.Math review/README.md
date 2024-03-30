@@ -28,11 +28,13 @@
      <p align="center">$D_{KL} (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
    - an aside - Monte Carlo estimation :
      <p align="center">$E_p[f(X)] \cong \frac{1}{N} \sum_{i=1} ^ {N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$</p>
+     (latex수식은 제대로 적었는데 시그마가 계속 위로 올라가네요)
 
-   
+   - 추가조사 : 마르코프 부등식, 체비셰프 부등식, 젠슨 부등식
+   - 마르코프 부등식 : $P(X \geq a) \leq \frac{\mathbb{E}[X]}{a}
+$
 
-
-# 4. A classification example
+# 3. Linear algebra review
 
 1. A linear classifier
   
