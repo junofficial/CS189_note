@@ -85,3 +85,4 @@
    - $Q(h) = h^T H(f) h = h^T Q \mathit{\Lambda} Q^T h \ = \ (Q^T) h^T A Q^T h$
    - 이 때 $u \ = \ Q^T h$
    - $Q(u) = \lambda_1 u_1^2 + \lambda_2 u_2^2 + \cdots + \lambda_n u_n^2$
+   - 고유값을 통해 임계점이 극대, 극소, 안장점임을 판별
