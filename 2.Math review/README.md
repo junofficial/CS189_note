@@ -50,6 +50,7 @@
    - $L_p norm$은 벡터 성분의 p제곱합의 1/p제곱으로 정의됨
      <p align="center">$\|x\|_p = \left( \sum_{i=1}^{n} |x_i|^p \right)^{1/p}$</p>
 
+
 3. Matrix
    - Square matrix : $n=m$
    - Symmetric matrix : $a_{ij} = a_{ji}, A = A^T$
