@@ -14,10 +14,15 @@
    - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
 
 2. Random variables의 예시 => 동전던지기 <br/>
- $P(x=1)=0.75, P(x=0)=0.25 \text{     here,} X \sim \text{Bernoulli}(0.75)$  <br/>
- $X \sim \text{Bernoulli}(0.75) \\$
- When flipping conin N times: $X_1,X_2, \cdots, X_N \sim \text{Bernoulli}(0.75)
-5. The goal is for the model to generalize to new data which was not fit on.
+ $P(x=1)=0.75, P(x=0)=0.25 \text{     here, } X \sim \text{Bernoulli}(0.75)$  <br/>
+ When flipping conin N times: $X_1,X_2, \cdots, X_N \sim \text{Bernoulli}(0.75)$
+ expected value : 0.75
+ variance : 0.1875
+
+3. Information theory
+   - entropy(H) : 확률이 낮을수록 정보량이 높고 엔트로피가 크다.
+     <p align="center">$H(X) = -\sum_{x} P(X=x) \log P(X=x) = E[- \log P(X=x)]$</p>
+
 
 그 예제로는 밑에 같은 것들이 존재한다.
 1. Recognizing digits
