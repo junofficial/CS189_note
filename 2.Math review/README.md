@@ -82,4 +82,6 @@
    - $H_{ij} = \frac{\partial ^2 f}{\partial {w_i} \partial {w_j}}$
    - i와 i의 변수로 함수 f를 편미분한 이계도함수를 (i,j)의 원소로 가지고 있는 행렬
    - 연속함수이려면 대칭행렬
-   - $Q(h) = h^T H(f) h = h^T Q \mathit{\Lambda} Q^T h$
+   - $Q(h) = h^T H(f) h = h^T Q \mathit{\Lambda} Q^T h \ = \ (Q^T) h^T A Q^T h$
+   - 이 때 $u \ = \ Q^T h$
+   - $Q(u) = \lambda_1 u_1^2 + \lambda_2 u_2^2 + \cdots + \lambda_n u_n^2$
