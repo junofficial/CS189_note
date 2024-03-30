@@ -14,9 +14,9 @@
    - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
 
 2. Random variables의 예시 => 동전던지기 <br/>
- $P(x=1)=0.75, P(x=0)=0.25 \text{     here, } X \sim \text{Bernoulli}(0.75)$  <br/>
- When flipping conin N times: $X_1,X_2, \cdots, X_N \sim \text{Bernoulli}(0.75)$
- expected value : 0.75
+ $P(x=1)=0.75, P(x=0)=0.25 \quad \text{here, } X \sim \text{Bernoulli}(0.75)$  <br/>
+ When flipping conin N times: $X_1,X_2, \cdots, X_N \sim \text{Bernoulli}(0.75)$<br/>
+ expected value : 0.75<br/>
  variance : 0.1875
 
 3. Information theory
