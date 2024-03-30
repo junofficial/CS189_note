@@ -25,7 +25,7 @@
    - Cross entropy : P와 Q의 분포를 비교, $P=Q$라면 $H(P,Q)=H(P)$
      <p align="center">$H(P,Q) = -\sum_{x} P(X=x) \log Q(X=x)$</p>
    - KL divergence :
-     <p align="center">$D_KL (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
+     <p align="center">$D_{KL} (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
 
 
 그 예제로는 밑에 같은 것들이 존재한다.
