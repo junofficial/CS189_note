@@ -20,8 +20,12 @@
  variance : 0.1875
 
 3. Information theory
-   - entropy(H) : 확률이 낮을수록 정보량이 높고 엔트로피가 크다.
+   - entropy(H) : 확률이 낮을수록 정보량이 높고 엔트로피가 크다. 떄로는 "expected surprise"로 불리기도 한다.
      <p align="center">$H(X) = -\sum_{x} P(X=x) \log P(X=x) = E[- \log P(X=x)]$</p>
+   - Cross entropy : P와 Q의 분포를 비교, $P=Q$라면 $H(P,Q)=H(P)$
+     <p align="center">$H(P,Q) = -\sum_{x} P(X=x) \log Q(X=x)$</p>
+   - KL divergence :
+     <p align="center">$D_KL (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
 
 
 그 예제로는 밑에 같은 것들이 존재한다.
