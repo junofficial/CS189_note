@@ -42,13 +42,14 @@
    - A matrix is a "2-dimensional" table
    - Sometimes, "higher dimensional" objects are called tensors
    - 사용될 때 곡선이 없는 굵은 글자로 표시(Vector는 소문자, 이외의 고차원들은 대문자로 작성)
-
+$
 \begin{bmatrix}
 v_1 \\
 v_2 \\
 \vdots \\
 v_d
 \end{bmatrix}
+$
 \vdots & \ddots & \vdots
    $u = $[u_1, u_2, \cdots, u_d]
 
