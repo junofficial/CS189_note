@@ -42,18 +42,15 @@
    - A matrix is a "2-dimensional" table
    - Sometimes, "higher dimensional" objects are called tensors
    - 사용될 때 곡선이 없는 굵은 글자로 표시(Vector는 소문자, 이외의 고차원들은 대문자로 작성)
-$
-\begin{bmatrix}
-v_1 \\
-v_2 \\
-\vdots \\
-v_d
-\end{bmatrix}
-$
-\vdots & \ddots & \vdots
-   $u = $[u_1, u_2, \cdots, u_d]
 
-3. Nearest neighbor classifiers
+2. Norm
+   - 벡터 공간에서 벡터의 크기나 길이를 나타내는 함수로, 물리적인 "길이"에 해당하는 수학적 개념
+   - $L_1 norm$은 벡터의 각 성분의 절대값의 합으로 정의
+     <p align="center">$\|x\|_1 = \sum_{i=1}^{n} |x_i|$</p>
+   - $L_p norm$은 벡터 성분의 p제곱합의 1/p제곱으로 정의됨
+     <p align="center">$\|x\|_p = \left( \sum_{i=1}^{n} |x_i|^p \right)^{1/p}$</p>
+
+4. Nearest neighbor classifiers
 
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
 
