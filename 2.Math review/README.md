@@ -56,7 +56,7 @@
    - Symmetric matrix : $a_{ij} = a_{ji}, A = A^T$
    - Positive semidefinite matrix : a square, symmetric matrix A for which $X^{T}AX \geq 0, for all X$
    - trace of square matrix $tr(A) = \sum_i a{ii}$
-   - Forbenius norm : $\|A\| = \sqrt{\sum_{i}\sum_{j} |a_{ij}|^2} = \sqrt{tr(A^{T}A)}$
+   - Forbenius norm : $\|A\|_F = \sqrt{\sum_{i}\sum_{j} |a_{ij}|^2} = \sqrt{tr(A^{T}A)}$
 
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
 
