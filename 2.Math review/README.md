@@ -37,13 +37,21 @@
 
 # 3. Linear algebra review
 
-1. A linear classifier
-  
-   <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/c69f6ed6-a2e2-4c81-9d23-bb8f6e9d1ad4" width="300" height="300"/></p>
-   
-   - Linear decision boundary를 통해 분류하게 되고 잘 구분하지 못하는 단점이 있다.
+1. Vector, matrices, and tensors
+   - A Vector is a "1-dimensional" row or column of number
+   - A matrix is a "2-dimensional" table
+   - Sometimes, "higher dimensional" objects are called tensors
+   - 사용될 때 곡선이 없는 굵은 글자로 표시(Vector는 소문자, 이외의 고차원들은 대문자로 작성)
+$ v = 
+\begin{bmatrix}
+0 & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & 0
+\end{bmatrix}
+$
+   $u = $[u_1, u_2, \cdots, u_d]
 
-2. Nearest neighbor classifiers
+3. Nearest neighbor classifiers
 
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
 
