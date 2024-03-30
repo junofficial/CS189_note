@@ -14,9 +14,9 @@
    - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
 
 2. Random variables의 예시 => 동전던지기
-
- $X \sim \text{Bernoulli}(p)$
-
+ $P(x=1)=0.75, P(x=0)=0.25 /text{here,} \sim \text{Bernoulli}(0.75)$
+ $X \sim \text{Bernoulli}(0.75)$
+ When flipping conin N times: $X_1,X_2, \cdots, X_N \sim \text{Bernoulli}(0.75)$<p align="center">$= E[(X - E[X])^2] = E[X^2] - (E[X])^2$</p>
 5. The goal is for the model to generalize to new data which was not fit on.
 
 그 예제로는 밑에 같은 것들이 존재한다.
