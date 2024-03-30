@@ -10,7 +10,7 @@
      <p align="center">$E[X] = \sum_{x} x \cdot P(X = x) $</p>
    - Variance
      <p align="center">$\text{Var}(X) = \sum_{x} (x - E[X])^2 \cdot P(X = x)$</p>
-     <p align="center">$ = E[(X - E[X])^2] = E[X^2] - (E[X])^2$</p>
+     <p align="center">$= E[(X - E[X])^2] = E[X^2] - (E[X])^2$</p>
    - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
 
 4. Optimizaion 알고리즘이 데이터에 well fitted라면 good parameters를 찾게 된다.
