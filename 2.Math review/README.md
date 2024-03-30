@@ -35,7 +35,7 @@
       - 체비셰프 부등식 : $P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$
       - 젠슨 부등식 : $\phi\left(\mathbb{E}[X]\right) \leq \mathbb{E}[\phi(X)]$ (단, 개구간 I에서 정의된 convex함수 일 떄)
 
-# 3. Linear algebra review
+# 2. Linear algebra review
 
 1. Vector, matrices, and tensors
    - A Vector is a "1-dimensional" row or column of number
@@ -58,10 +58,21 @@
    - trace of square matrix $tr(A) = \sum_i a{ii}$
    - Forbenius norm : $\|A\|  = \sqrt{\sum_{i}\sum_{j} |a_{ij}|^2} = \sqrt{tr(A^{T}A)}$
 
+
+# 3. Eigenvalue and eigenvectors
+
+1. Eigenvalue and eigenvectors
+   - 수업 중 설명이 많이 없어서 추가로 공부 진행하였고 공부했던 사이트 링크 첨부하겠습니다.
+   - https://darkpgmr.tistory.com/105
+2. Singularvalue and singularvectors
+   - 마찬가지로 링크 첨부해두겠습니다. 설명이 자세해서 공부할 때는 좋을 것 같습니다.
+   - https://darkpgmr.tistory.com/106
    <p align="center"><img src="https://github.com/junofficial/mppi_RobotArm/assets/124868359/8aeb1cf3-e6ab-47d1-9b8c-3c4911e0dfe7" width="600" height="300"/></p>
 
-   - Nearest neighbor classifier의 경우 Linear에 비해 학습 데이터를 정확하게 분류할 수 있다.
-   - 1-nearest neighbor의 경우 가장 정확하게 분류할 수 있지만 overfitting의 전형적인 예시라고 볼 수 있다.
-   - 15-nearest neighbor의 경우 약간 smoothing이 될 수 있는 것을 볼 수 있지만, 수식적으로 표현할 수 없고 non-Linear하다.
-  
+# 4. Vector calculus review
 
+1. Gradients
+   - 함수를 편미분한 값을 원소로 하는 벡터, f(x) = y 에서 f(x)는 n-dimension column vector이고 이떄의 y는 scholar값
+   - x와y로 이루어진 함수에서 함수 값 z가 두 값의 변화에 따라 어떻게 변하는지를 나타냄
+   - 최적화 문제에서는 이 z값을 최소화 하는 지점 p(x,y)를 찾는 것
+   - First order cordinate를 이용하면 $\nabla g(x,y) = 0$
