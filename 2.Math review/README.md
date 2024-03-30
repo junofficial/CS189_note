@@ -27,7 +27,7 @@
    - KL divergence :
      <p align="center">$D_{KL} (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
    - an aside - Monte Carlo estimation :
-     <p align="center">$E_p[f(X)] \cong \frac{1}{N} \sum_{i=1}{N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$</p>
+     <p align="center">$E_p[f(X)] \cong \frac{1}{N} \sum_{i=1}^{N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$</p>
 
    
 
