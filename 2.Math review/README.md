@@ -7,10 +7,10 @@
    - 실제 나온 sample의 경우는 소문자로 작성하는 것이 일반적
    - i.i.d.(independent and identically distributed)한 성질을 가지고 있다.
    - Expected Value
-     <p align="center">$E[X] = \sum_{x} x \cdot P(X = x) $</p>
+     <p align="center">$mathbb{E}[X] = \sum_{x} x \cdot P(X = x) $</p>
    - Variance
-     <p align="center">$\text{Var}(X) = \sum_{x} (x - E[X])^2 \cdot P(X = x)$</p>
-     <p align="center">$= E[(X - E[X])^2] = E[X^2] - (E[X])^2$</p>
+     <p align="center">$\text{Var}(X) = \sum_{x} (x - mathbb{E}[X])^2 \cdot P(X = x)$</p>
+     <p align="center">$= mathbb{E}[(X - mathbb{E}[X])^2] = mathbb{E}[X^2] - (mathbb{E}[X])^2$</p>
    - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
 
 2. Random variables의 예시 => 동전던지기 <br/>
@@ -21,13 +21,13 @@
 
 3. Information theory
    - entropy(H) : 확률이 낮을수록 정보량이 높고 엔트로피가 크다. 떄로는 "expected surprise"로 불리기도 한다.
-     <p align="center">$H(X) = -\sum_{x} P(X=x) \log P(X=x) = E[- \log P(X=x)]$</p>
+     <p align="center">$H(X) = -\sum_{x} P(X=x) \log P(X=x) = mathbb{E}[- \log P(X=x)]$</p>
    - Cross entropy : P와 Q의 분포를 비교, $P=Q$라면 $H(P,Q)=H(P)$
-     <p align="center">$H(P,Q) = -\sum_{x} P(X=x) \log Q(X=x) = E_p[- \log Q(X=x)]$</p>
+     <p align="center">$H(P,Q) = -\sum_{x} P(X=x) \log Q(X=x) = mathbb{E}_p[- \log Q(X=x)]$</p>
    - KL divergence :
      <p align="center">$D_{KL} (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
    - an aside - Monte Carlo estimation :
-     <p align="center">$E_p[f(X)] \cong \frac{1}{N} \sum_{i=1} ^ {N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$</p>
+     <p align="center">$mathbb{E}_p[f(X)] \cong \frac{1}{N} \sum_{i=1} ^ {N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$</p>
      (latex수식은 제대로 적었는데 시그마가 계속 위로 올라가네요)
 
    - 추가조사 : 마르코프 부등식, 체비셰프 부등식, 젠슨 부등식
