@@ -20,7 +20,7 @@
  variance : 0.1875
 
 3. Information theory
-   - entropy(H) : 확률이 낮을수록 정보량이 높고 엔트로피가 크다. 떄로는 "expected surprise"로 불리기도 한다.
+   - entropy(H) : 확률이 낮을수록 정보량이 높고 엔트로피가 크다. 때로는 "expected surprise"로 불리기도 한다.
      <p align="center">$H(X) = -\sum_{x} P(X=x) \log P(X=x) = \mathbb{E}[- \log P(X=x)]$</p>
    - Cross entropy : P와 Q의 분포를 비교, $P=Q$라면 $H(P,Q)=H(P)$
      <p align="center">$H(P,Q) = -\sum_{x} P(X=x) \log Q(X=x) = \mathbb{E}_p[- \log Q(X=x)]$</p>
@@ -33,7 +33,7 @@
    - 추가조사 : 마르코프 부등식, 체비셰프 부등식, 젠슨 부등식
       - 마르코프 부등식 : $\mathbb{E}[X] \geq t P(X \geq t), P(X \geq a) \leq \frac{\mathbb{E}[X]}{a}$
       - 체비셰프 부등식 : $P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$
-      - 젠슨 부등식 : $\phi\left(\mathbb{E}[X]\right) \leq \mathbb{E}[\phi(X)]$ (단, 개구간 I에서 정의된 convex함수 일 떄)
+      - 젠슨 부등식 : $\phi\left(\mathbb{E}[X]\right) \leq \mathbb{E}[\phi(X)]$ (단, 개구간 I에서 정의된 convex함수 일 때때)
 
 # 2. Linear algebra review
 
@@ -72,7 +72,14 @@
 # 4. Vector calculus review
 
 1. Gradients
-   - 함수를 편미분한 값을 원소로 하는 벡터, f(x) = y 에서 f(x)는 n-dimension column vector이고 이떄의 y는 scholar값
+   - 함수를 편미분한 값을 원소로 하는 벡터, f(x) = y 에서 f(x)는 n-dimension column vector이고 이때의 y는 scholar값
    - x와y로 이루어진 함수에서 함수 값 z가 두 값의 변화에 따라 어떻게 변하는지를 나타냄
    - 최적화 문제에서는 이 z값을 최소화 하는 지점 p(x,y)를 찾는 것
    - First order cordinate를 이용하면 $\nabla g(x,y) = 0$
+  
+2. Hessian Matrix
+   - 2차미분함수(이계도함수)를 행렬로 표현한 것
+   - $H_{ij} = \frac{\partial ^2 f}{\partial {w_i} \partial {w_j}}$
+   - i와 i의 변수로 함수 f를 편미분한 이계도함수를 (i,j)의 원소로 가지고 있는 행렬
+   - 연속함수이려면 대칭행렬
+   - $Q(h) = h^T H(f) h = h^T Q \mathit{\Lambda} Q^T h$
