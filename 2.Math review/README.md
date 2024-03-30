@@ -15,7 +15,7 @@
 
 2. Random variables의 예시 => 동전던지기
 
-3. X \sim \text{Bernoulli}(p)
+ $X \sim \text{Bernoulli}(p)$
 
 5. The goal is for the model to generalize to new data which was not fit on.
 
