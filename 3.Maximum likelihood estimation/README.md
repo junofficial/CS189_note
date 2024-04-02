@@ -41,8 +41,27 @@
    - so the final expression for the MLE for univariate Gaussian : $arg\underset{\mu, \sigma}\max \sum_i[-\frac{1}{2} \frac{(x_i-\mu)^2}{\sigma^2} -\frac{1}{2}\log{\sigma}^2 + C]$
    - In final expression we wish to find :  $arg\underset{\mu, \sigma}\max -\frac{1}{2}\sum_i^N (x_i-\mu)^2 -\frac{N}{2}\log{\sigma}^2$
 
-3. finding 
+3. As $\theta = [\mu,\sigma^2]$ we are going to find $\mu_{MLE}, \sigma_{MLE}^2$ using derivatives
+   <p align="center">${\partial\over\partial \mu} : \sum_i \frac{x_i-\mu_{MLE}}{\sigma^2} = 0 \Rightarrow \mu_{MLE} : \frac{\sum_i x_i}{N}$ </p>
+   <p align="center">${\partial\over\partial \sigma^2} : \frac{1}{(2\sigma_{MLE}^2)^2} \sum_i {(x_i-\mu)}^2 - \frac{N}{2\sigma_{MLE}^2} = 0$ </p>
+   <p align="center">$\Rightarrow \sigma_{MLE}^2 = \frac{\sum_i (x_i - \mu)^2}{N}$</p>
 
+4. MLE : in the limit of infinite data
+   - what happens as the number of data points $N \rightarrow \infty$?
+   <p align="center">$arg\underset{\theta}\max\sum_{i=1}^k \log p_{\theta}(x_i)$ </p>
+   <p align="center">$\frac{1}{N} \sum_i \log p_{\theta}(x_i) \overset{N \rightarrow \infty}\rightarrow \mathbb{E}_{p_{\hat{\theta}}}[\log p_{\theta}(X)]$(Monte Carlo estimation) </p>
 
+5. MLE and information theory
+   - recall the definition of cross-entropy : $H(p,q) = \mathbb{E}_p[-\log q(x)]$
+   - change p to $p_{\hat{\theta}}$ and q to $p_{\theta}$ then:
+   <p align="center">$H(p_{\hat{\theta}},p_{\theta}) = \mathbb{E}_{p_{\hat{\theta}}}[-\log p_{\theta}(X)] \approx \frac{1}{N} \sum_{i=1}^N -\log p_{\theta}(x_i)$</p>
+   - Also cross-entropy to KLD
+   <p align="center">$D_{KL}(p_{\hat{\theta}} \parallel p_{\theta}) = H(p_{\hat{\theta}},p_{\theta}) - H(p_{\hat{\theta}})$</p>
 
-
+# 3. MLE for regression/classification
+1. Regression and classification
+   - given data : $\mathcal{D} = ${ $(\mathbf{x}_1,y_1), \ldots , (\mathbf{x}_N,y_N)$ }
+   - assume a set of distributions on $(\mathbf{x},y)$ : $p_{\theta} : \theta \in \Theta, p_{\theta}(x,y) = p(x)p_{\theta}(y|x)$
+   - the parameter $\theta$ only dictate the conditional distribution of y given x
+   - the objective, definition are same : 
+    <p align="center">$theta_{MLE} = arg\underset{\theta \leftarrow \Theta}\max p_{\theta}(\infty) = arg\underset{\theta \leftarrow \Theta}\max\prod_{i=1}^N p_{\theta}(x_i)$</p>
