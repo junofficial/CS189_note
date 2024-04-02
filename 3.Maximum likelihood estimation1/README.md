@@ -4,16 +4,12 @@
 
 <p align="center"><img src="https://github.com/junofficial/CS189_note/assets/124868359/d803adde-2ff3-4838-b4a5-ab21f07410e5" width="200" height="200"/></p>
 
-   - data : $\{{(x_i, y_i)}_{i=1}^{N}\}$
-     (예시로는 동전 던지기, 주사위 던지기 등등..)
-   - 실제 나온 sample의 경우는 소문자로 작성하는 것이 일반적
-   - i.i.d.(independent and identically distributed)한 성질을 가지고 있다.
-   - Expected Value
-     <p align="center">$\mathbb{E}[X] = \sum_{x} x \cdot P(X = x) $</p>
-   - Variance
-     <p align="center">$\text{Var}(X) = \sum_{x} (x - \mathbb{E}[X])^2 \cdot P(X = x)$</p>
-     <p align="center">$= \mathbb{E}[(X - \mathbb{E}[X])^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$</p>
-   - Bayes'rule, Jenson's inequality와 같은 공식들을 사용가능
+   - data : $\{(x_i, y_i)\} _{i=1}^{N}$
+   - model : $f_{\theta}(x) = y$
+   - linear model : $f_{\theta}(x) = \mathbf{w}^T x + b$
+   - loss function : $l(y,\hat{y}) = (y-\hat{y})^2$
+   - objective : find parameters that minimize the average loss
+     $\theta^* = arg\underset{\theta}\min \frac{1}{N} \sum_{i=1}^{N} l(y_i,f_{\theta}(x_i))$
 
 2. Random variables의 예시 => 동전던지기 <br/>
  $P(x=1)=0.75, P(x=0)=0.25 \quad \text{here, } X \sim \text{Bernoulli}(0.75)$  <br/>
