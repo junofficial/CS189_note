@@ -35,50 +35,14 @@
 2. MLE : for a univatiate Gaussian
    - Assume that each data point is generated i.i.d. as $X_i \sim \mathcal{N}(\hat{\mu},\hat{\sigma}^2)$
    - Given dataset : $\mathcal{D} = ${ $x_1, \ldots , x_N$ }
-   - our goal : $\theta_{MLE} = [\mu_{MLE},]$
+   - our goal : $\theta_{MLE} = [\mu_{MLE}, \sigma_{MLE}^2] = arg\underset{\mu, \sigma}\max\prod_{i=1}^N \mathcal{N}(x_i;\mu,\sigma^2)$
+   - 하지만 이 모든 곱을 어떻게 미분을 통해 최소값을 찾을까(0으로 만들까?) => Idea is to take log
+   - After taking log : $arg\underset{\mu, \sigma}\max\prod_{i=1}^N \mathcal{N}(x_i;\mu,\sigma^2) = arg\underset{\mu, \sigma}\max\log\prod_{i=1}^N \mathcal{N}(x_i;\mu,\sigma^2)$
+   - so the final expression for the MLE for univariate Gaussian : $arg\underset{\mu, \sigma}\max \sum_i[-\frac{1}{2} \frac{(x_i-\mu)^2}{\sigma^2} -\frac{1}{2}\log{\sigma}^2 + C]$
+   - In final expression we wish to find :  $arg\underset{\mu, \sigma}\max -\frac{1}{2}\sum_i^N (x_i-\mu)^2 -\frac{N}{2}\log{\sigma}^2$
+
+3. finding 
 
 
 
 
-
-
-
-
-
-
-   
-
-4. Matrix
-   - Square matrix : $n=m$
-   - Symmetric matrix : $a_{ij} = a_{ji}, A = A^T$
-   - Positive semidefinite matrix : a square, symmetric matrix A for which $X^{T}AX \geq 0,\ for \ all \ X$
-   - trace of square matrix $tr(A) = \sum_i a{ii}$
-   - Forbenius norm : $\|A\|  = \sqrt{\sum_{i}\sum_{j} |a_{ij}|^2} = \sqrt{tr(A^{T}A)}$
-
-
-# 3. Eigenvalue and eigenvectors
-
-1. Eigenvalue and eigenvectors
-   - 수업 중 설명이 많이 없어서 추가로 공부 진행하였고 공부했던 사이트 링크 첨부하겠습니다.
-   - https://darkpgmr.tistory.com/105
-2. Singularvalue and singularvectors
-   - 마찬가지로 링크 첨부해두겠습니다. 설명이 자세해서 공부할 때는 좋을 것 같습니다.
-   - https://darkpgmr.tistory.com/106
-
-# 4. Vector calculus review
-
-1. Gradients
-   - 함수를 편미분한 값을 원소로 하는 벡터, f(x) = y 에서 f(x)는 n-dimension column vector이고 이때의 y는 scholar값
-   - x와y로 이루어진 함수에서 함수 값 z가 두 값의 변화에 따라 어떻게 변하는지를 나타냄
-   - 최적화 문제에서는 이 z값을 최소화 하는 지점 p(x,y)를 찾는 것
-   - First order cordinate를 이용하면 $\nabla g(x,y) = 0$
-  
-2. Hessian Matrix
-   - 2차미분함수(이계도함수)를 행렬로 표현한 것
-   - $H_{ij} = \frac{\partial ^2 f}{\partial {w_i} \partial {w_j}}$
-   - i와 i의 변수로 함수 f를 편미분한 이계도함수를 (i,j)의 원소로 가지고 있는 행렬
-   - 연속함수이려면 대칭행렬
-   - $Q(h) = h^T H(f) h = h^T Q \mathit{\Lambda} Q^T h \ = \ (Q^T) h^T A Q^T h$
-   - 이 때 $u \ = \ Q^T h$
-   - $Q(u) = \lambda_1 u_1^2 + \lambda_2 u_2^2 + \cdots + \lambda_n u_n^2$
-   - 고유값을 통해 임계점이 극대, 극소, 안장점임을 판별
