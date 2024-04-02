@@ -28,12 +28,14 @@
 
 1. MLE : the basic(non machine learning) setup
    - 주어진 데이터가 $\mathcal{D} = ${ $\mathbf{x}_1, \ldots , \mathbf{x}_N$ }
-   - Assume $\mathcal{D}$ was sampled from a member of this family : $X_1, \ldonts , X_N \overset{i.i.d.}{\sim} P_{\hat{\theta}}$
+   - Assume $\mathcal{D}$ was sampled from a member of this family : $X_1, \ldots , X_N \overset{i.i.d.}{\sim} P_{\hat{\theta}}$
    - The goal is to recover $\hat{\theta}$
-   - objective/definition : $\theta_{MLE} = arg\max$
+   - objective/definition : $\theta_{MLE} = arg\underset{\theta \leftarrow \Theta}\max p_{\theta}(\infty) = arg\underset{\theta \leftarrow \Theta}\max\prod_{i=1}^N p_{\theta}(x_i)$
 
-2. Norm
-   -
+2. MLE : for a univatiate Gaussian
+   - Assume that each data point is generated i.i.d. as $X_i \sim \mathcal{N}(\hat{\mu},\hat{\sigma}^2)$
+   - Given dataset : $\mathcal{D} = ${ $x_1, \ldots , x_N$ }
+   - our goal : $\theta_{MLE} = [\mu_{MLE},]$
 
 
 
