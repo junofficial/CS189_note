@@ -68,8 +68,9 @@
 
 2. Example : "Least squares" linear regression(최소제곱 선형회귀)
    - data : $\mathcal{D} = ${ $(\mathbf{x}_1,y_1), \ldots , (\mathbf{x}_N,y_N)$ }
-   - $Y|X \sim \mathcal{N}(\hat{w}^T X + \hat{b}, {\sigma}^2)$
-   - $Y = \hat{w}^T X + \hat{b} + \varepsilon \leftarrow \varepsilon \sim \mathcal{N}(0,{\sigma}^2)$(noise)
+   - $Y|X \sim \mathcal{N}(\hat{\mathbf{w}}^T X + \hat{b}, {\sigma}^2)$
+   - $Y = \hat{\mathbf{w}}^T X + \hat{b} + \varepsilon \leftarrow \varepsilon \sim \mathcal{N}(0,{\sigma}^2)$(noise)
   
 3. $\theta$에 대해서 결정되는 것들을 구분($\theta$에 의해서 결정되는 input이 아니면 고려하지 않아도 됨)
-   - the object is : $$arg\underset{\theta \leftarrow \Theta}\max \sum_{i=1}^{N}$$
+   - the object is : $$arg\underset{\theta \leftarrow \Theta}\max \sum_{i=1}^{N} \log \mathcal{N}(y_i ; \mathbf{w}^T x_i + b))$$
+   - $=arg\underset{\theta}\max \sum_i \frac{1}{2 \sigma^2}(\mathbf{w}^T x_i + b - y_i)^2 + constant w.r.t. \theta$
