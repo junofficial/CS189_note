@@ -27,7 +27,7 @@
    - KL divergence :
      <p align="center">$D_{KL} (P \parallel Q) = -\sum_{x} P(X=x) \log \frac{P(X=x)}{Q(X=x)} = H(P,Q) - H(P)$</p>
    - an aside - Monte Carlo estimation :
-     <p align="center">$\mathbb{E}_p[f(X)] \cong \frac{1}{N} \sum_{i=1} ^ {N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$</p>
+     <p align="center">$$\mathbb{E}_p[f(X)] \cong \frac{1}{N} \sum_{i=1} ^ {N} f(x_i), \quad X_1,X_2, \cdots, X_N \overset{i.i.d.}{\sim} P$$</p>
      (latex수식은 제대로 적었는데 시그마가 계속 위로 올라가네요)
 
    - 추가조사 : 마르코프 부등식, 체비셰프 부등식, 젠슨 부등식
@@ -46,9 +46,9 @@
 2. Norm
    - 벡터 공간에서 벡터의 크기나 길이를 나타내는 함수로, 물리적인 "길이"에 해당하는 수학적 개념
    - $L_1 norm$은 벡터의 각 성분의 절대값의 합으로 정의
-     <p align="center">$\|x\|_1 = \sum_{i=1}^{n} |x_i|$</p>
+     <p align="center">$$\|x\|_1 = \sum_{i=1}^{n} |x_i|$$</p>
    - $L_p norm$은 벡터 성분의 p제곱합의 1/p제곱으로 정의됨
-     <p align="center">$\|x\|_p = \left( \sum_{i=1}^{n} |x_i|^p \right)^{1/p}$</p>
+     <p align="center">$$\|x\|_p = \left( \sum_{i=1}^{n} |x_i|^p \right)^{1/p}$$</p>
 
 
 3. Matrix
