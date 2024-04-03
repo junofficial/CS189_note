@@ -2,7 +2,11 @@
 
 1. Some linear algebra on the MLE objective
    - for this setup: $$arg\underset{w}\max -\frac{1}{2 \sigma^2} \sum_{i=1}^{N} (\mathbf{w}^T x_i - y_i)^2 = arg\underset{w}\min \sum_{i=1}^{N} (\mathbf{w}^T x_i - y_i)^2$$
+   - this looks like a $l_2-norm$ squared : $||v||_{2}^{2} = \sum_i v_i^2 = V^T V$
 
+2. Solving least squares linear regression
+   - objective : $arg\underset{w}\min {||Xw-y||}_2^2 = arg\underset{w}\min {(Xw-y)}^T(Wx-y)$
+     $$arg\underset{w}\min w^T X^T X w - 2 y^T X w + y^T y$$
 <p align="center"><img src="https://github.com/junofficial/CS189_note/assets/124868359/d803adde-2ff3-4838-b4a5-ab21f07410e5" width="200" height="200"/></p>
 
    - data : $\{(x_i, y_i)\} _{i=1}^{N}$
