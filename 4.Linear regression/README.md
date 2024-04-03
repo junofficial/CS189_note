@@ -9,23 +9,16 @@
      $= arg\underset{w}\min w^T X^T X w - 2 y^T X w + y^T y$
    - take gradient and set equal to zero :
    - $\nabla_w : 2 X^T X w - 2 X^T y$
-   - $set to 0 : X^T X w_{MLE} = X ^ T y \Rightarrow w_{MLE} = {(X^T X)}^{-1} X^T y$
+   - $set\ to\ 0\ : X^T X w_{MLE} = X ^ T y \Rightarrow w_{MLE} = {(X^T X)}^{-1} X^T y$
    - Hessian check :
-   - $\nabla_w^2 : 2 X^T X is PSD for any v,$
+   - $\nabla_w^2 : 2 X^T X\ is\ PSD\ for\ any\ v,$
      $= v^T(2 X^T X) v = 2(Xv)^T Xv = 2{||Xv||}_2^2 \ge 0$
 
-   - data : $\{(x_i, y_i)\} _{i=1}^{N}$
-   - model : $f_{\theta}(x) = y$
-   - linear model : $f_{\theta} (x) = \mathbf{w}^T x + b$
-   - loss function : $l(y,\hat{y}) = (y-\hat{y})^2$
-   - objective : find parameters that minimize the average loss
-     $$\theta^* = arg\underset{\theta}\min \frac{1}{N} \sum_{i=1}^{N} l(y_i,f_{\theta}(x_i))$$
-
-2. The maximum likelihood principle
-   - 1. requires probability distribution controlled by model parameters.
-      - focus on probabilistic models
+3. Examining the least square solution
+   - The solution we found needs $X^T X$ to be invertible.
+      - When the columns of $X$ are not linearly independent
    - 2. assume that some setting of parameters generated the observed data
-   - 3. We can recover these parameters through optimization by maximizing the likelihood of the observed data.
+   - 3. We can recover these parameters througtimization by maximizing the likelihood of the observed data.
  
 
 3. Probabilistic models
