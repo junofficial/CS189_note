@@ -65,3 +65,10 @@
    - the parameter $\theta$ only dictate the conditional distribution of y given x
    - the objective, definition are same : 
     <p align="center">$theta_{MLE} = arg\underset{\theta \leftarrow \Theta}\max p_{\theta}(\infty) = arg\underset{\theta \leftarrow \Theta}\max\prod_{i=1}^N p_{\theta}(x_i)$</p>
+
+2. Example : "Least squares" linear regression(최소제곱 선형회귀)
+   - data : $\mathcal{D} = ${ $(\mathbf{x}_1,y_1), \ldots , (\mathbf{x}_N,y_N)$ }
+   - $Y|X \sim \mathcal{N}(\hat{w}^T X + \hat{b}, {\sigma}^2)$
+   - $Y = \hat{w}^T X + \hat{b} + \varepsilon \leftarrow \varepsilon \sim \mathcal{N}(0,{\sigma}^2)$(noise)
+  
+3. $\theta$에 대해서 결정되는 것들을 구분
