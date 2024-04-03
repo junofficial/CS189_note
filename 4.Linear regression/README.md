@@ -6,8 +6,13 @@
 
 2. Solving least squares linear regression
    - objective : $arg\underset{w}\min {||Xw-y||}_2^2 = arg\underset{w}\min {(Xw-y)}^T(Wx-y)$
-     $$= arg\underset{w}\min w^T X^T X w - 2 y^T X w + y^T y$$
-<p align="center"><img src="https://github.com/junofficial/CS189_note/assets/124868359/d803adde-2ff3-4838-b4a5-ab21f07410e5" width="200" height="200"/></p>
+     $= arg\underset{w}\min w^T X^T X w - 2 y^T X w + y^T y$
+   - take gradient and set equal to zero :
+   - $\nabla_w : 2 X^T X w - 2 X^T y$
+   - $set to 0 : X^T X w_{MLE} = X ^ T y \Rightarrow w_{MLE} = {(X^T X)}^{-1} X^T y$
+   - Hessian check :
+   - $\nabla_w^2 : 2 X^T X is PSD for any v,$
+     $= v^T(2 X^T X) v = 2(Xv)^T Xv = 2{||Xv||}_2^2 \ge 0$
 
    - data : $\{(x_i, y_i)\} _{i=1}^{N}$
    - model : $f_{\theta}(x) = y$
