@@ -73,4 +73,4 @@
   
 3. $\theta$에 대해서 결정되는 것들을 구분($\theta$에 의해서 결정되는 input이 아니면 고려하지 않아도 됨)
    - the object is : $$arg\underset{\theta \leftarrow \Theta}\max \sum_{i=1}^{N} \log \mathcal{N}(y_i ; \mathbf{w}^T x_i + b))$$
-   - $=arg\underset{\theta}\max \sum_i \frac{1}{2 \sigma^2}(\mathbf{w}^T x_i + b - y_i)^2 + constant w.r.t. \theta$
+   - $$=arg\underset{\theta}\max \sum_i \frac{1}{2 \sigma^2}(\mathbf{w}^T x_i + b - y_i)^2 + constant w.r.t. \theta$$
