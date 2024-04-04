@@ -14,16 +14,19 @@
    - $\nabla_w^2 : 2 X^T X\ is\ PSD\ for\ any\ v,$
      $= v^T(2 X^T X) v = 2(Xv)^T Xv = 2{||Xv||}_2^2 \ge 0$
 
-3. Examining the least square solution
-   - The solution we found needs $X^T X$ to be invertible.
-      - When the columns of $X$ are not linearly independent
-   - 2. assume that some setting of parameters generated the observed data
-   - 3. We can recover these parameters througtimization by maximizing the likelihood of the observed data.
+# 2. Other MLE formulations for linear regression
+1. Other MLE formulations examples
+   - 1. if i.i.d. gaussian noise
+          - Least square Linear Regression으로 해결
+   - 2. if Laplace distribution noise
+          - Least absolute Deviation Linear Regression으로 해결
+   - 3. if not i.i.d.
+          - Weighted Linear Regression
  
 
-3. Probabilistic models
-   - What does a probabilistic model look like?
-     <p align="center">$f_{\theta}(x)= \mathcal{N}(\mathbf{w}x+b,{\sigma}^2)$</p>
+2. From MLE to least abolute deviation
+   - Assume that the ouput given the input is generated i.i.d. as 
+   $Y|X \sim Laplace (\hat{\mathbf{w}}^T X , \sigma)$
    - we can see in terms of output probabilities.
      <p align="center">$p_{\theta}(y|x)= \mathcal{N}(y;\mathbf{w}x+b,{\sigma}^2)$</p>
 
